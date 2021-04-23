@@ -5,6 +5,7 @@
 #include <QTextEdit>
 #include <qsplitter.h>
 #include <qtreeview.h>
+#include <QPointer>
 
 class MainWindow : public QMainWindow {
 public:
@@ -14,6 +15,7 @@ public:
 private:
     void setupLayout();
     void setupMenuBar();
+    void setupToolBar();
     void setupFileViewer();
     void setupEditViewer();
     void setupSelectionViewer();
@@ -22,25 +24,26 @@ private:
 
 public:
     //File Functions
-    void onNewFileTriggered();
     void onOpenFileTriggered();
-    void onOpenFolderTriggered();
+    void onCalculateMedianTriggered();
     void OnExitTriggered();
     //Edit Functions
     void onCopyTriggered();
     void onCutTriggered();
     void onpasteTriggered();
+    double MainWindow::CalcMedian(std::vector<int> scores);
 
 private:
     //File
-    QAction* _NewFile;
     QAction* _openFile;
-    QAction* _openFolder;
+    QAction* CalculateMedian;
     QAction* _exit;
     //Edit
     QAction* _copyText;
     QAction* _PasteText;
     QAction* _cutText;
+    //
+    QToolBar* toolBar;
 
     
     
@@ -50,7 +53,13 @@ private:
     QWidget* _centralWidget;
     QGridLayout* _gridLayout;
     QSplitter* _widgetsplitter;
-    QTreeView* _settingsWidget;
+    QTextEdit* _textWidgetCalculator;
+   //
+    QStringList stringList;
+    std::vector<int> OrderedValues;
+    int value = 0;
+    int minimum = 0;
+    //
    
 
 
