@@ -1,14 +1,12 @@
 # ninja log v5
-3	128	0	libs/CMakeFiles/QtAppLibrary_autogen	e6b1652c564ce48d
+5	127	0	libs/CMakeFiles/QtAppLibrary_autogen	e6b1652c564ce48d
 525	1098	6408871061278849	libs/CMakeFiles/QtAppLibrary.dir/QtAppLibrary_autogen/PNK5WDWK6L/qrc_resources.cpp.obj	97047c19797ecc65
 469	1090	6408871061269000	libs/CMakeFiles/QtAppLibrary.dir/QtAppLibrary_autogen/mocs_compilation.cpp.obj	7ec59acc5e8aa630
 4958	5137	6408871101570975	libs/QtAppLibrary.lib	7f81b8ed22f3f169
-3	128	0	libs/QtAppLibrary_autogen/mocs_compilation.cpp	e6b1652c564ce48d
+5	127	0	libs/QtAppLibrary_autogen/mocs_compilation.cpp	e6b1652c564ce48d
 208	466	6408871054986280	libs/QtAppLibrary_autogen/PNK5WDWK6L/qrc_resources.cpp	b126741f1b00d250
 541	4760	6408871097977168	app/CMakeFiles/QtApp.dir/main.cpp.obj	fd39adff3ed09019
 508	4953	6408871099878528	libs/CMakeFiles/QtAppLibrary.dir/src/MainWindow.cpp.obj	6f869d376929f66a
 5139	10676	6408871116230882	app/QtApp.exe	f8b070ee147aab23
-5	131	0	libs/CMakeFiles/QtAppLibrary_autogen	e6b1652c564ce48d
-5	131	0	libs/QtAppLibrary_autogen/mocs_compilation.cpp	e6b1652c564ce48d
-5	127	0	libs/CMakeFiles/QtAppLibrary_autogen	e6b1652c564ce48d
-5	127	0	libs/QtAppLibrary_autogen/mocs_compilation.cpp	e6b1652c564ce48d
+4	116	0	libs/CMakeFiles/QtAppLibrary_autogen	e6b1652c564ce48d
+4	116	0	libs/QtAppLibrary_autogen/mocs_compilation.cpp	e6b1652c564ce48d
