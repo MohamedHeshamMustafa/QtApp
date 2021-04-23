@@ -1,0 +1,19 @@
+{
+	"BUILD_DIR" : "D:/Side-trials/Infinion/QtApp/out/build/x64-Debug/libs/QtAppLibrary_autogen",
+	"CMAKE_BINARY_DIR" : "D:/Side-trials/Infinion/QtApp/out/build/x64-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/Side-trials/Infinion/QtApp/out/build/x64-Debug/libs",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/Side-trials/Infinion/QtApp/libs",
+	"CMAKE_SOURCE_DIR" : "D:/Side-trials/Infinion/QtApp",
+	"INCLUDE_DIR" : "D:/Side-trials/Infinion/QtApp/out/build/x64-Debug/libs/QtAppLibrary_autogen/include",
+	"INPUTS" : [],
+	"LOCK_FILE" : "D:/Side-trials/Infinion/QtApp/out/build/x64-Debug/libs/CMakeFiles/QtAppLibrary_autogen.dir/AutoRcc_resources_PNK5WDWK6L_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "PNK5WDWK6L",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "D:/Program Files/vcpkg/installed/x64-windows/tools/qt5/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/Side-trials/Infinion/QtApp/out/build/x64-Debug/libs/CMakeFiles/QtAppLibrary_autogen.dir/AutoRcc_resources_PNK5WDWK6L_Used.txt",
+	"SOURCE" : "D:/Side-trials/Infinion/QtApp/libs/res/resources.qrc",
+	"VERBOSITY" : 0
+}
