@@ -102,6 +102,7 @@ _Chutzpah*
 
 # Visual C++ cache files
 CMakeSettings.json
+out/
 ipch/
 *.aps
 *.ncb
