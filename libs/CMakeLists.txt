@@ -5,12 +5,6 @@ add_library(
 	STATIC
 )
 
-#Putting alias is optional to force CMake to treat Mint as target not as lib
-#add_library(
-	#Mint::Library
-	#ALIAS
-	#MintLibrary
-#)
 
 target_sources(
 	QtAppLibrary

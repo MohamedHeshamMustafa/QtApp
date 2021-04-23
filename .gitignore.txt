@@ -101,6 +101,7 @@ StyleCopReport.xml
 _Chutzpah*
 
 # Visual C++ cache files
+CMakeSettings.json
 ipch/
 *.aps
 *.ncb
@@ -360,6 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-#CMakeSettingsJason
-CMakeSettings.json
