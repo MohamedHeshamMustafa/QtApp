@@ -31,7 +31,7 @@ public:
     void onCopyTriggered();
     void onCutTriggered();
     void onpasteTriggered();
-    double MainWindow::CalcMedian(std::vector<int> scores);
+    double MainWindow::CalcMedian(std::vector<double> scores);
 
 private:
     //File
@@ -56,7 +56,7 @@ private:
     QTextEdit* _textWidgetCalculator;
    //
     QStringList stringList;
-    std::vector<int> OrderedValues;
+    std::vector<double> OrderedValues;
     QString strFinal;
     //
    

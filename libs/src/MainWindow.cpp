@@ -11,6 +11,8 @@
 #include <QToolBar>
 // Internal
 #include "MainWindow.h"
+//STL
+#include <math.h>
 
 MainWindow::MainWindow(QWidget* parent){
     setWindowTitle("QtApp");
@@ -72,6 +74,10 @@ void MainWindow::setupFileViewer() {
 
 
 void MainWindow::onOpenFileTriggered() {
+    /*_textWidget->clear();
+    OrderedValues.clear();
+    stringList.clear();*/
+
     QString filename = QFileDialog::getOpenFileName(this, "Open");
     QFile file(filename);
     auto currentFile = filename;
@@ -91,7 +97,7 @@ void MainWindow::onOpenFileTriggered() {
             break;
         else
             stringList.append(line);
-            OrderedValues.push_back(line.toInt());
+            OrderedValues.push_back(line.toDouble());
             
     }
     std::sort(OrderedValues.begin(), OrderedValues.end());
@@ -107,7 +113,7 @@ void MainWindow::onOpenFileTriggered() {
 
 }
 
-double MainWindow::CalcMedian(std::vector<int> scores)
+double MainWindow::CalcMedian(std::vector<double> scores)
 {
     size_t size = scores.size();
 
@@ -132,7 +138,8 @@ double MainWindow::CalcMedian(std::vector<int> scores)
 void MainWindow::onCalculateMedianTriggered() {
 
     auto median = CalcMedian(OrderedValues);
-    QString stringg = QString::number(median);
+    float rounded_down_median = floorf(median * 100) / 100;
+    QString stringg = QString::number(rounded_down_median);
     _textWidgetCalculator->setText(stringg);
 
 }
