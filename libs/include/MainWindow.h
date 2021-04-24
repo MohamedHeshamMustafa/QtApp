@@ -57,8 +57,7 @@ private:
    //
     QStringList stringList;
     std::vector<int> OrderedValues;
-    int value = 0;
-    int minimum = 0;
+    QString strFinal;
     //
    
 

@@ -86,28 +86,25 @@ void MainWindow::onOpenFileTriggered() {
  
     while (true)
     {
-        QString line = in.readAll();
+        QString line = in.readLine();
         if (line.isNull())
             break;
         else
-            int value = line.toInt();
-            OrderedValues.push_back(value);
             stringList.append(line);
+            OrderedValues.push_back(line.toInt());
+            
     }
     std::sort(OrderedValues.begin(), OrderedValues.end());
-    foreach(QString str, stringList)
+
+    for (int i = 0; i < OrderedValues.size(); ++i)
     {
-        //int value = str.toInt();
-        OrderedValues.push_back(value);
-        _textWidget->setText(str);
+        if (i > 0)
+            strFinal += "\n";
+        strFinal += QString::number(OrderedValues[i]);
     }
-    /*for (int i = 0; i < OrderedValues.size(); i++) {
 
-        QString str = QString::number(OrderedValues[i]);
-        _textWidget->setText(str);
+    _textWidget->setText(strFinal);
 
-    }*/
-    //file.close();
 }
 
 double MainWindow::CalcMedian(std::vector<int> scores)
