@@ -55,7 +55,7 @@ private:
     QSplitter* _widgetsplitter;
     QTextEdit* _textWidgetCalculator;
    //
-    QStringList stringList;
+    //QStringList stringList;
     std::vector<double> OrderedValues;
     QString strFinal;
     //

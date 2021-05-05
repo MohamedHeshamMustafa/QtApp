@@ -74,9 +74,8 @@ void MainWindow::setupFileViewer() {
 
 
 void MainWindow::onOpenFileTriggered() {
-    /*_textWidget->clear();
+    _textWidget->clear();
     OrderedValues.clear();
-    stringList.clear();*/
 
     QString filename = QFileDialog::getOpenFileName(this, "Open");
     QFile file(filename);
@@ -96,20 +95,20 @@ void MainWindow::onOpenFileTriggered() {
         if (line.isNull())
             break;
         else
-            stringList.append(line);
             OrderedValues.push_back(line.toDouble());
             
     }
     std::sort(OrderedValues.begin(), OrderedValues.end());
 
+    QString temp;
     for (int i = 0; i < OrderedValues.size(); ++i)
     {
         if (i > 0)
-            strFinal += "\n";
-        strFinal += QString::number(OrderedValues[i]);
+            temp += "\n";
+        temp += QString::number(OrderedValues[i]);
     }
 
-    _textWidget->setText(strFinal);
+    _textWidget->setText(temp);
 
 }
 
