@@ -25,6 +25,7 @@ private:
 public:
     //File Functions
     void onOpenFileTriggered();
+    void onOpenJsonFileTriggered();
     void onCalculateMedianTriggered();
     void OnExitTriggered();
     //Edit Functions
@@ -36,6 +37,7 @@ public:
 private:
     //File
     QAction* _openFile;
+    QAction* _openJsonFile;
     QAction* CalculateMedian;
     QAction* _exit;
     //Edit
@@ -57,11 +59,10 @@ private:
    //
     //QStringList stringList;
     std::vector<double> OrderedValues;
+    std::vector<double> OrderedValuesinJson;
     QString strFinal;
     //
    
-
-
 
 
 };
