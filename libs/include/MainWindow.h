@@ -3,8 +3,8 @@
 #include <QMainWindow>
 #include <QGridLayout>
 #include <QTextEdit>
-#include <qsplitter.h>
-#include <qtreeview.h>
+#include <QSplitter>
+#include <QTreeView>
 #include <QPointer>
 
 class MainWindow : public QMainWindow {

@@ -1,10 +1,10 @@
 //Qt
 #include <QMenuBar>
 #include <QTextEdit>
-#include <qgridlayout.h>
-#include <qsplitter.h>
-#include <qtreeview.h>
-#include<QFileDialog.h>
+#include <QGridLayout>
+#include <QSplitter>
+#include <QTreeView>
+#include <QFileDialog>
 #include <QMessageBox>
 #include <QTextStream>
 #include <QApplication>
@@ -30,9 +30,6 @@ MainWindow::~MainWindow() = default;
 void MainWindow::setupMenuBar() {
     setupFileViewer();
     setupEditViewer();
-    //setupSelectionViewer();
-    //setupFindViewer();
-    //setupHelpViewer();
 
 }
 
