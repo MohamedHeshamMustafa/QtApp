@@ -118,6 +118,7 @@ void MainWindow::onOpenFileTriggered() {
 
 void MainWindow::onOpenJsonFileTriggered(){
     _textWidget->clear();
+    _textWidgetCalculator->clear();
     OrderedValues.clear();
 
     QString filename = QFileDialog::getOpenFileName(this, "Open");
@@ -143,7 +144,9 @@ void MainWindow::onOpenJsonFileTriggered(){
 
     foreach(const QJsonValue & val, ptsArray) {
         double x = val.toObject().value("x").toDouble();
+        double xx = val.toObject().value("y").toDouble();
         OrderedValues.emplace_back(x);
+        OrderedValues.emplace_back(xx);
     }
 
     std::sort(OrderedValues.begin(), OrderedValues.end());
@@ -172,7 +175,6 @@ double MainWindow::CalcMedian(std::vector<double> scores)
     }
     else
     {
-        //sort(scores.begin(), scores.end());
         if (size % 2 == 0)
         {
             return (scores[size / 2 - 1] + scores[size / 2]) / 2;

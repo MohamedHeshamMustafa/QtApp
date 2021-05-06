@@ -27,12 +27,12 @@ public:
     void onOpenFileTriggered();
     void onOpenJsonFileTriggered();
     void onCalculateMedianTriggered();
+    double CalcMedian(std::vector<double> scores);
     void OnExitTriggered();
     //Edit Functions
     void onCopyTriggered();
     void onCutTriggered();
     void onpasteTriggered();
-    double MainWindow::CalcMedian(std::vector<double> scores);
 
 private:
     //File
